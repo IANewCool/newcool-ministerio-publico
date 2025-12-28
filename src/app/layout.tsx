@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ministerio Publico - NewCooltura Informada",
+  title: "Ministerio Publico Chile - Fiscalias | NewCooltura Informada",
   description: "Buscador de fiscalias, como denunciar delitos y derechos de las victimas en Chile",
+  keywords: ["ministerio publico", "fiscalia", "denunciar delitos", "derechos victimas", "fiscales"],
+  openGraph: {
+    title: "Ministerio Publico - NewCooltura Informada",
+    description: "Fiscalias y denuncias de delitos",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
